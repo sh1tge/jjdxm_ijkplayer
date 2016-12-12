@@ -1071,6 +1071,7 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
         for (int i = 0; i < s_allAspectRatio.length; i++) {
             if (s_allAspectRatio[i] == aspectRatio) {
                 mCurrentAspectRatioIndex = i;
+                mCurrentAspectRatio = s_allAspectRatio[mCurrentAspectRatioIndex];
                 if (mRenderView != null) {
                     mRenderView.setAspectRatio(mCurrentAspectRatio);
                 }
